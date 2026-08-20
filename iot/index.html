@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IoT Home Automation Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🏠 IoT Home Automation Dashboard</h1>
+    <p>Monitor and control your smart home devices</p>
+</header>
+
+<main>
+
+    <!-- Sensor Section -->
+    <section class="sensor-section">
+
+        <div class="sensor-card">
+            <h3>🌡 Temperature</h3>
+            <p id="temperature">25 °C</p>
+        </div>
+
+        <div class="sensor-card">
+            <h3>💧 Humidity</h3>
+            <p id="humidity">60 %</p>
+        </div>
+
+        <div class="sensor-card">
+            <h3>⚡ Power Usage</h3>
+            <p id="power">0 W</p>
+        </div>
+
+    </section>
+
+    <!-- Device Section -->
+    <section>
+
+        <h2>Smart Devices</h2>
+
+        <div class="device-container">
+
+            <div class="device-card">
+                <h3>💡 Light</h3>
+                <p>Status: <span id="light-status">OFF</span></p>
+
+                <button onclick="toggleDevice('light')">
+                    ON / OFF
+                </button>
+            </div>
+
+            <div class="device-card">
+                <h3>🌀 Fan</h3>
+                <p>Status: <span id="fan-status">OFF</span></p>
+
+                <button onclick="toggleDevice('fan')">
+                    ON / OFF
+                </button>
+            </div>
+
+            <div class="device-card">
+                <h3>❄️ Air Conditioner</h3>
+                <p>Status: <span id="ac-status">OFF</span></p>
+
+                <button onclick="toggleDevice('ac')">
+                    ON / OFF
+                </button>
+            </div>
+
+            <div class="device-card">
+                <h3>🔒 Door Lock</h3>
+                <p>Status: <span id="door-status">LOCKED</span></p>
+
+                <button onclick="toggleDevice('door')">
+                    LOCK / UNLOCK
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- System Status -->
+
+    <section class="system-status">
+
+        <h2>System Status</h2>
+
+        <p>
+            Connection:
+            <strong id="connection">Connected</strong>
+        </p>
+
+        <p>
+            Last Updated:
+            <strong id="time">--</strong>
+        </p>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>IoT Home Automation Dashboard | GitHub Project</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
